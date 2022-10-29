@@ -12,7 +12,7 @@ import java.util.List;
 public class UsusarioController {
 
     @Autowired
-    UsuarioRepository repository;
+    private UsuarioRepository repository;
 
     @PostMapping
     public  void postUsuario(@RequestBody Usuario usuario){
