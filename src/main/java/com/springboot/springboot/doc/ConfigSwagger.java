@@ -1,4 +1,4 @@
-package com.springboot.springboot.doc;
+/*package com.springboot.springboot.doc;
 
 
 import io.swagger.models.Contact;
@@ -29,4 +29,4 @@ public class ConfigSwagger {
         //corpo do dockets
         return docket;
     }
-}
+}*/
