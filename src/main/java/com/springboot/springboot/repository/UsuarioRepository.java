@@ -1,5 +1,7 @@
 package com.springboot.springboot.repository;
 
+import com.springboot.springboot.handler.BusinessException;
+import com.springboot.springboot.handler.ResponseError;
 import com.springboot.springboot.model.Usuario;
 import org.springframework.stereotype.Repository;
 
@@ -10,7 +12,10 @@ import java.util.List;
 public class UsuarioRepository {
 
     public void save(Usuario usuario) {
-        System.out.println("SAVE - REcebeu o usuario na camada repository");
+        if (usuario.getLogin()==null)
+            throw new BusinessException("É obrigatório o campo login");
+        System.out.println("SAVE - Recebeu o usuario na camada repository");
+
         System.out.println(usuario);
     }
 
